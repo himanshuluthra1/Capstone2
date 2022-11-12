@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: rahulwagh17/capstone-docker-demo:capstone-docker-demo
+          image: himanshuluthra/capstone-docker-demo:capstone-docker-demo
           ports:
             - containerPort: 8080
           env:

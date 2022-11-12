@@ -2,7 +2,7 @@ node {
 
     stage("Git Clone"){
 
-        git credentialsId: 'GIT_HUB_CREDENTIALS', url: 'https://github.com/rahulwagh/k8s-jenkins-aws'
+        git credentialsId: 'GIT_HUB_CREDENTIALS', url: 'https://github.com/himanshuluthra1/Capstone2'
     }
 
      stage('Gradle Build') {
@@ -15,7 +15,7 @@ node {
         sh 'docker version'
         sh 'docker build -t jhooq-docker-demo .'
         sh 'docker image list'
-        sh 'docker tag jhooq-docker-demo rahulwagh17/jhooq-docker-demo:jhooq-docker-demo'
+        sh 'docker tag jhooq-docker-demo himanshuluthra/jhooq-docker-demo:jhooq-docker-demo'
     }
 
     stage('Push Docker Image') {
