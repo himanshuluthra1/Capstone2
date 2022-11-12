@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  capstone-springboot-container:
+    image: capstone-spring-boot-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/capstone-springboot-container
+    ports:
+      - "8080-8100:8080"
